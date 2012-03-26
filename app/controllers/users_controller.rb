@@ -18,6 +18,7 @@ class UsersController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @user }
+	  format.xml { render xml: @user.to_xml }
     end
   end
 
@@ -29,6 +30,7 @@ class UsersController < ApplicationController
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @user }
+      format.xml { render xml: @user }
     end
   end
 
@@ -48,6 +50,7 @@ class UsersController < ApplicationController
 	
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render json: @user, status: :created, location: @user }
+		format.xml { render :xml => @user.to_xml }
       else
         format.html { render action: "new" }
         format.json { render json: @user.errors, status: :unprocessable_entity }
