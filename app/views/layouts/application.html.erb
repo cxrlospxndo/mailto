@@ -11,6 +11,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="#">Texting</a>
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li><%= link_to "Browse" %></li>
+          <li><%= link_to "List" %></li>
+          <li><%= link_to "Contact Us" %></li>
+          <li><%= link_to "Cart" %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="container">
 	<div class="row">		
 		<div class="span9"><%= yield %></div>
@@ -23,11 +43,6 @@ justo. Nulla quis, dapien faucibulum ipsum ac, imper fermenteget amet molestie e
 justo. Ut molest, dictum eros nas tortis. Donec magna id, tellus. Maurisus ornare consectetus lobort</p>
 		</div>
 	</div>	
-</div>
-<div class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
-    
-  </div>
 </div>
 </body>
 </html>
